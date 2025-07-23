@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Image Carousel</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+ 
+</head>
+<body>
+  <div class="carousel-container">
+    <div class="carousel">
+      <button class="nav prev">&#10094;</button>
+      <div class="carousel-track" id="carouselTrack">
+        <img src="assets/images/img1.jpg" class="carousel-image" alt="Image 1" />
+        <img src="assets/images/img2.jpg" class="carousel-image" alt="Image 2" />
+        <img src="assets/images/img3.jpg" class="carousel-image" alt="Image 3" />
+      </div>
+      <button class="nav next">&#10095;</button>
+    </div>
+    <div class="indicators" id="indicators"></div>
+    <div class="controls">
+      <button id="playBtn">Play</button>
+      <button id="pauseBtn">Pause</button>
+    </div>
+  </div>
+
+  
+</body>
+</html>
