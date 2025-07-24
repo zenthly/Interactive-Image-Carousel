@@ -1,45 +1,25 @@
-# 🖼️ Interactive Image Carousel
+. Interactive Image Carousel
 
-A sleek and touch-friendly image slider made with HTML, CSS, and vanilla JavaScript.
+. Project Description
+This is an **Interactive Image Carousel** that displays 10 images in a clean, modern, and user-friendly interface. It includes:
 
-## ✨ Features
+- Auto-play: images change automatically every 3 seconds
+- Manual navigation: users can click Prev and Next buttons to navigate images
+- Smooth fade animation between images
+- Responsive design for both desktop and mobile devices
+- Clean CSS styling for a polished look and feel
 
-- ▶️ Auto-play with play/pause button
-- ⬅️➡️ Previous and Next arrows
-- 🔘 Dot indicators for navigation
-- 📱 Mobile swipe support
-- ⌨️ Keyboard navigation (left/right arrows)
-- 💡 Smooth fade transitions
-- 📐 Fully responsive design
+---
+. Features
 
-## 📁 File Structure
-
-```
-/image-carousel/
-├── index.html         # Main structure
-├── style.css          # Design and layout
-├── script.js          # Carousel logic
-├── assets/
-│   └── images/
-│       ├── img1.jpg
-│       ├── img2.jpg
-│       └── img3.jpg
-```
-
-## 🔧 Technologies Used
-
-- HTML5, CSS3
-- Vanilla JavaScript (event listeners, timers)
-- Responsive & mobile-first design
-
-## 🎓 Learning Outcomes
-
-- DOM-based navigation
-- Dynamic class manipulation
-- Event handling (click, touch, keyboard)
-- Auto-play loop and timing functions
-- Building mobile-compatible components
+- Displays up to 10 images located in the `images/` folder
+- Navigation buttons ("◀" and "▶") to move backward and forward between images
+- Automatic slideshow that changes images every 3 seconds (auto-play)
+- Auto-play resets when users manually navigate images
+- Smooth fade-in/fade-out animation for seamless transitions
+- Mobile-first responsive design that works well on all screen sizes
 
 ---
 
-© 2025 | Created by Sezibera Obed
+. Project Structure
+
