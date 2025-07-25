@@ -1,18 +1,14 @@
-const carousel = document.querySelector(".carousel");
-const images = document.querySelectorAll(".carousel-image");
-const totalImages = images.length;
-let index = 0;
+const prevBtn = document.querySelector('.prev');
+const nextBtn = document.querySelector('.next');
+const track = document.querySelector('.carousel-track');
 
-document.querySelector(".next").addEventListener("click", () => {
-  index = (index + 1) % totalImages;
-  updateCarousel();
+let scrollAmount = 0;
+const scrollStep = 310;
+
+nextBtn.addEventListener('click', () => {
+  track.scrollBy({ left: scrollStep, behavior: 'smooth' });
 });
 
-document.querySelector(".prev").addEventListener("click", () => {
-  index = (index - 1 + totalImages) % totalImages;
-  updateCarousel();
+prevBtn.addEventListener('click', () => {
+  track.scrollBy({ left: -scrollStep, behavior: 'smooth' });
 });
-
-function updateCarousel() {
-  carousel.style.transform = `translateX(-${index * 100}%)`;
-}
