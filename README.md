@@ -11,8 +11,6 @@ This is an **Interactive Image Carousel** that displays 10 images in a clean, mo
 
 ---
 🚀 Demo
-
-![Weather Widget Screenshot]()
 🔗 Live Demo:[click here ](https://interactive-image-carousel.netlify.app/)
 . Features
 
