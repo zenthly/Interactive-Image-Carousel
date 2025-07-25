@@ -1,28 +1,18 @@
-const track = document.querySelector('.carousel-track');
-const images = document.querySelectorAll('.carousel-track img');
-const prevBtn = document.querySelector('.prev');
-const nextBtn = document.querySelector('.next');
+const carousel = document.querySelector(".carousel");
+const images = document.querySelectorAll(".carousel-image");
+const totalImages = images.length;
+let index = 0;
 
-let currentIndex = 0;
+document.querySelector(".next").addEventListener("click", () => {
+  index = (index + 1) % totalImages;
+  updateCarousel();
+});
+
+document.querySelector(".prev").addEventListener("click", () => {
+  index = (index - 1 + totalImages) % totalImages;
+  updateCarousel();
+});
 
 function updateCarousel() {
-  const width = images[0].clientWidth;
-  track.style.transform = `translateX(-${currentIndex * width}px)`;
+  carousel.style.transform = `translateX(-${index * 100}%)`;
 }
-
-nextBtn.addEventListener('click', () => {
-  currentIndex = (currentIndex + 1) % images.length;
-  updateCarousel();
-});
-
-prevBtn.addEventListener('click', () => {
-  currentIndex = (currentIndex - 1 + images.length) % images.length;
-  updateCarousel();
-});
-
-window.addEventListener('resize', updateCarousel);
-
-setInterval(() => {
-  currentIndex = (currentIndex + 1) % images.length;
-  updateCarousel();
-}, 5000);
