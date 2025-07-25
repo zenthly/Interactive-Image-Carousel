@@ -12,7 +12,7 @@ This is an **Interactive Image Carousel** that displays 10 images in a clean, mo
 ---
 🚀 Demo
 
-![Weather Widget Screenshot](."C:\Users\User\Pictures\Screenshots\Screenshot 2025-07-24 231240.png")
+![Weather Widget Screenshot]()
 🔗 Live Demo:[click here ](https://interactive-image-carousel.netlify.app/)
 . Features
 
