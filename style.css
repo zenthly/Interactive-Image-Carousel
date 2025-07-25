@@ -1,12 +1,8 @@
-* {
-  box-sizing: border-box;
+body {
   margin: 0;
   padding: 0;
-}
-
-body {
+  background: #111;
   font-family: 'Segoe UI', sans-serif;
-  background: #f3f4f6;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,39 +14,35 @@ body {
   width: 90%;
   max-width: 800px;
   overflow: hidden;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
 }
 
-.carousel-track {
+.carousel {
   display: flex;
   transition: transform 0.5s ease-in-out;
 }
 
-.carousel-track img {
+.carousel-image {
   width: 100%;
   flex-shrink: 0;
-  height: 500px;
   object-fit: cover;
+  height: 500px;
+  border-radius: 10px;
 }
 
-.btn {
+.prev,
+.next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(255,255,255,0.8);
+  background: rgba(255, 255, 255, 0.7);
+  color: black;
+  font-size: 2rem;
   border: none;
-  padding: 10px 15px;
-  font-size: 24px;
   cursor: pointer;
+  padding: 10px;
   border-radius: 50%;
-  z-index: 10;
-  transition: background 0.3s;
-}
-
-.btn:hover {
-  background: #ff5e5e;
-  color: white;
 }
 
 .prev {
