@@ -1,14 +1,34 @@
-const prevBtn = document.querySelector('.prev');
-const nextBtn = document.querySelector('.next');
-const track = document.querySelector('.carousel-track');
 
-let scrollAmount = 0;
-const scrollStep = 310;
+const track = document.querySelector('.carousel-track');
+const images = document.querySelectorAll('.carousel-image');
+const prevBtn = document.querySelector('.nav.prev');
+const nextBtn = document.querySelector('.nav.next');
+
+let currentIndex = 0;
+
+function getImageWidth() {
+  return images[0].clientWidth;
+}
+
+function updateSlide() {
+  track.style.transform = `translateX(-${currentIndex * getImageWidth()}px)`;
+}
 
 nextBtn.addEventListener('click', () => {
-  track.scrollBy({ left: scrollStep, behavior: 'smooth' });
+  currentIndex = (currentIndex + 1) % images.length;
+  updateSlide();
 });
 
 prevBtn.addEventListener('click', () => {
-  track.scrollBy({ left: -scrollStep, behavior: 'smooth' });
+  currentIndex = (currentIndex - 1 + images.length) % images.length;
+  updateSlide();
 });
+
+setInterval(() => {
+  currentIndex = (currentIndex + 1) % images.length;
+  updateSlide();
+}, 2000);
+
+window.addEventListener('resize', updateSlide);
+
+updateSlide();
