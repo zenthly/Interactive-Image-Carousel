@@ -3,29 +3,70 @@
 <head>
   <meta charset="UTF-8">
   <title>Interactive Image Carousel</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  <style>
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.carousel-image {
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+}
+
+</style>
 </head>
 <body>
 
   <div class="carousel-container">
+    <h4 class="p-3">Image Slider - carousel </h4>
     <button class="nav prev">&#10094;</button>
     <div class="carousel">
       <div class="carousel-track">
-        <!-- Amafoto azashyirwa hano -->
-        <img src="images/4ad994390d76c852254aecfdc4a59bce.jpg" alt="">
-        <img src="images/4d8606798fe169a283372aec31e47f5b.jpg" alt="">
-        <img src="images/7e4df904bdb0047ecdd7a8ef019de83f.jpg" alt="">
-        <img src="images/9ed1e375b8d7bf716e1d0670b39ccf71.jpg" alt="">
-        <img src="images/10a062a5a597c435933c10142806c6d8.jpg" alt="">
-        <img src="images/36e0eecbbc3023da8f1e18274f8e1823.jpg" alt="">
-        <img src="images/68e4b7df96066e7bd0231dca0253a99c.jpg" alt="">
-        <img src="images/90bed2e0b37a6f111d810d722243c890_2.jpg" alt="">
-        <img src="images/96f24159452f0d4fee485fe7ba02488e.jpg" alt="">
-        <img src="images/239e10ad2e565e2558d32a1ce11a1c40.jpg" alt="">
+        <img src="images/4ad994390d76c852254aecfdc4a59bce.jpg" alt="Image 1" class="carousel-image">
+        <img src="images/4d8606798fe169a283372aec31e47f5b.jpg" alt="Image 2" class="carousel-image">
+        <img src="images/7e4df904bdb0047ecdd7a8ef019de83f.jpg" alt="Image 3" class="carousel-image">
+        <img src="images/9ed1e375b8d7bf716e1d0670b39ccf71.jpg" alt="Image 4" class="carousel-image">
+        <img src="images/10a062a5a597c435933c10142806c6d8.jpg" alt="Image 5" class="carousel-image">
+        <img src="images/36e0eecbbc3023da8f1e18274f8e1823.jpg" alt="Image 6" class="carousel-image">
+        <img src="images/68e4b7df96066e7bd0231dca0253a99c.jpg" alt="Image 7" class="carousel-image">
+        <img src="images/90bed2e0b37a6f111d810d722243c890_2.jpg" alt="Image 8" class="carousel-image">
+        <img src="images/96f24159452f0d4fee485fe7ba02488e.jpg" alt="Image 9" class="carousel-image">
+        <img src="images/239e10ad2e565e2558d32a1ce11a1c40.jpg" alt="Image 10" class="carousel-image">
+        <img src="images/afe55e979ada471fe8e9229b47af7449_2.jpg" alt="Scenic view 11"  class="carousel-image">
+<img src="images/e88eb42cf6638a13e71a1a66ecc7ae73.jpg" alt="Nature landscape 12"  class="carousel-image">
+<img src="images/8333024e180cf6668c15c10818d0dd74.jpg" alt="Beautiful place 13"  class="carousel-image">
+<img src="images/38df091a75bc800fff1b482c1787fa75.jpg" alt="Green forest 14"  class="carousel-image">
+<img src="images/1fe5a846438b80c92d4101de3fd6f79d.jpg" alt="River view 15" class="carousel-image">
+<img src="images/14cce365fc58be0660a66f55bfca6561.jpg" alt="Mountain peak 16" class="carousel-image">
+<img src="images/6ce58dad416b5aef258b8b56de47fcd5.jpg" alt="Hills and sky 17" class="carousel-image">
+<img src="images/388a8b2c18e7da343cc8e7175a352699.jpg" alt="Travel destination 18" class="carousel-image">
+<img src="images/6780c5d71f01893fb659c972855e1727.jpg" alt="Lake view 19" class="carousel-image">
+<img src="images/91a5ce1e809fdcaf728b39b73e320484.jpg" alt="Sunset in village 20"  class="carousel-image">
+<img src="images/85fe18ae618d4cee399d6e9a0d240541.jpg" alt="Peaceful nature 21"  class="carousel-image">
+<img src="images/806b813335ce0e1b0e88edac67d0ceff.jpg" alt="Valley landscape 22"  class="carousel-image">
+<img src="images/767ccd26a84064fcc27a3668d7d5998e.jpg" alt="Wild view 23"  class="carousel-image">
+<img src="images/ff5e4f2390479269f9a9550dcaa6c2bb - Copy.jpg" alt="Grass field 24"  class="carousel-image">
+<img src="images/fcb8bd6f2e480d25b2bed16a2f673d17 - Copy.jpg" alt="Forest trees 25"  class="carousel-image">
+<img src="images/3fc97b0c5c1e9080718841312031ad7b.jpg" alt="Deep forest 26"  class="carousel-image">
+<img src="images/f498f16b95b79db40664761fcff460df.jpg" alt="Clear water 27"  class="carousel-image">
+<img src="images/6e2e32da5647043ebf5622833946c0b0.jpg" alt="Bushes and trees 28"  class="carousel-image">
+<img src="images/bbb970419801ae6811109a6820bff310.jpg" alt="Mountain road 29"  class="carousel-image">
+<img src="images/f75648038216e114ccd7e905bd7c7660.jpg" alt="Countryside 30"  class="carousel-image">
+<img src="images/e765992b8ef73a7d52ff0db67775e983.jpg" alt="Sunrise over hills 31"  class="carousel-image">
+<img src="images/413ac58c1609f768e0a9bb6458742a99.jpg" alt="Tree landscape 32"  class="carousel-image">
+<img src="images/055b5a110da1680344ff598f6cd3b3d9.jpg" alt="Peaceful nature path 33"  class="carousel-image">
+
       </div>
     </div>
     <button class="nav next">&#10095;</button>
   </div>
   <script src="script.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
